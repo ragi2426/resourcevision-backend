@@ -22,9 +22,7 @@ from user.views import (
     EducationViewSet,
     ExperienceViewSet,
     TechStackViewSet,
-    CertificationViewSet,
-    TimezoneViewSet,
-    DocumentsViewSet,
+    CertificationViewSet
 )
 from rest_framework import routers
 
@@ -37,7 +35,5 @@ router.register(r'education', EducationViewSet, basename='user-education')
 router.register(r'experience', ExperienceViewSet, basename='user-experience')
 router.register(r'techstack', TechStackViewSet, basename='user-techstack')
 router.register(r'certification', CertificationViewSet, basename='user-certification')
-router.register(r'timezones', TimezoneViewSet, basename='timezones')
-router.register(r'documents', DocumentsViewSet, basename='documents')
 
 urlpatterns = router.urls
